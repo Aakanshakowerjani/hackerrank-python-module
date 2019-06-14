@@ -1,0 +1,22 @@
+UPPERCASE='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+LOWERCASE='abcdefghijklmnopqrstuvwxyz'
+DIGITS='0123456789'
+ALPHA=UPPERCASE+LOWERCASE+DIGITS
+n=int(input())
+l=[]
+for i in range(n):
+    s=str(input())
+    l.append(s)
+
+
+def checking(s):
+    if len(s)==10:
+        if all(i in ALPHA for i in s):
+            if sum(1 for i in s if i in UPPERCASE) >= 2:
+                if sum(1 for i in s if i in DIGITS) >= 3:
+                    if len(set(s))==len(s):
+                        return "Valid"
+    return "Invalid"
+for i in l:
+    r=checking(i)
+    print(r)
