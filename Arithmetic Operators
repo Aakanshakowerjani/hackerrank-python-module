@@ -1,0 +1,8 @@
+n=input()
+m=input()
+x=n+m
+y=n-m
+z=n*m
+print(x)
+print(y)
+print(z)
