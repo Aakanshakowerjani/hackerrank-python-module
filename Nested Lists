@@ -1,0 +1,26 @@
+n=int(input())
+l=[]
+m=[]
+for i in range(n):
+    name=str(input())
+    marks=float(input())
+    l.append([name,marks])
+    m.append(marks)
+
+x=set(m)
+x.remove(min(m))
+s_min=min(x)
+
+p=[]
+ls=[]
+def func(ls,c):
+    for i in ls:
+        if c in i:
+            indi=ls.index(i)
+            p.append(l[indi][0])
+    p.sort()
+    return p
+z=[]
+z=func(l,s_min)
+for i in z:
+    print(i)
