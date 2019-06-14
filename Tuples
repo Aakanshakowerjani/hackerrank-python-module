@@ -1,0 +1,9 @@
+
+n=int(input())
+x=input()
+t=()
+for i in range(n):
+    k=(int(x.split()[i]),)
+    t=t+k
+
+print(hash(t))
