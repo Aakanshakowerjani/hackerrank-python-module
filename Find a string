@@ -1,0 +1,11 @@
+import re
+def count_substring(s,s1):
+
+    count = start = 0
+    while True:
+        start = s.find(s1, start) + 1
+        if start > 0:
+            count+=1
+        else:
+            return count
+
