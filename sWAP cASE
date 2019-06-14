@@ -1,0 +1,6 @@
+UPPERCASE = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+LOWERCASE = 'abcdefghijklmnopqrstuvwxyz'
+def swap_case(s):
+    return s.swapcase()
+
+
