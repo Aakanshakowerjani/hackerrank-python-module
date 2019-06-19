@@ -1,0 +1,11 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n=int(input())
+s=set(input().split(' '))
+m=int(input())
+s1=set(input().split(' '))
+x=list(s.symmetric_difference(s1))
+y=list(map(int,x))
+y.sort()
+
+for i in y:
+    print(i)
