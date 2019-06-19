@@ -1,0 +1,12 @@
+n=int(input())
+st1=input()
+m=int(input())
+st2=input()
+l=[]
+l=st1.split()
+l1=[]
+l1=st2.split()
+s1=set(l)
+s2=set(l1)
+l2=s1.intersection(s2)
+print(len(l2))
