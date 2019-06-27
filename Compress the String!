@@ -1,0 +1,8 @@
+from itertools import groupby
+r=[list(g) for k,g in groupby(input())]
+l=[]
+for i in r:
+    t=(len(i),int(i[0]))
+    l.append(t)
+for i in l:
+    print(i,end=' ')
