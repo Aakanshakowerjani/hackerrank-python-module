@@ -1,0 +1,8 @@
+from itertools import combinations
+n=int(input())
+s=input().split()
+m=int(input())
+l=list(combinations(s,m))
+l1=[i for i in l if 'a' in i]
+res=len(l1)/len(l)
+print(round(res,3))
