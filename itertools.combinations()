@@ -1,0 +1,16 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from itertools import combinations
+s=input().split()
+l=list(s[0])
+l.sort()
+n=int(s[1])
+l1=[]
+for i in range(n+1):
+    l1.append(list(combinations(l,i)))
+
+for i in l1[1:]:
+    i.sort()
+    for j in i:
+        print(''.join(j).upper())
+
+
