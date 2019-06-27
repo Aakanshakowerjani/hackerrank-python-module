@@ -1,0 +1,11 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n=int(input())
+s=list(map(int,input().split()))
+m=int(input())
+sum=0
+for i in range(m):
+    s1=list(map(int,input().split()))
+    if s1[0] in s:
+        sum+=s1[1]
+        s.remove(s1[0])
+print(sum)
