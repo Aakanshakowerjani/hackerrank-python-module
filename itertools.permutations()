@@ -1,0 +1,9 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from itertools import permutations
+s=input().split()
+l=s[0]
+n=int(s[1])
+l1=list(permutations(l,n))
+l1.sort()
+for i in l1:
+    print(''.join(i).upper())
