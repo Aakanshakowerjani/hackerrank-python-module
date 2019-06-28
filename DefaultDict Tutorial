@@ -1,0 +1,19 @@
+s=list(map(int,input().split()))
+n=s[0]
+m=s[1]
+l=[]
+l1=[]
+for i in range(n):
+    l.append(input())
+for i in range(m):
+    l1.append(input())
+for i in l1:
+    if i in l:
+        for indi,ele in enumerate(l):
+            if ele == i:
+                print(indi+1,end=' ')
+
+        print()
+    else:
+        print('-1')
+    
